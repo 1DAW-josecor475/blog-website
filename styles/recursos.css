@@ -1,0 +1,113 @@
+/* Estilado de la página Recursos */
+.recursos {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recursos .intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recursos h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.recursos p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.videos, .libros {
+    margin-bottom: 40px;
+}
+
+.videos h2, .libros h2 {
+    font-size: 2rem;
+    color: #005bb5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.videos-grid div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videos-grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.videos-grid p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.libros-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.libros-grid .libro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.libros-grid .libro p {
+    font-size: 1rem;
+    color: #333;
+    flex: 2;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.libros-grid a {
+    flex: 1;
+    text-decoration: none;
+}
+
+.libros-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.libros-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.videos iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}

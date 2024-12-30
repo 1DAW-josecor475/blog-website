@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Mentes Digitales | Recursos</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/recursos.css">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                 <li><a href="aplicaciones.html">Aplicaciones</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="recursos.html" class="active">Recursos</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="mapa-del-sitio.html">Mapa del Sitio</a></li>
@@ -27,36 +28,51 @@
         </nav>
     </header>
 
-    <main>
-        <section class="recursos">
-            <div class="videos">
+    <main class="recursos">
+        <section class="intro">
+            <h1>Recursos para Aprender sobre Inteligencia Artificial</h1>
+            <p>Encuentra videos, libros y materiales relevantes para profundizar tus conocimientos en IA y sus aplicaciones.</p>
+        </section>
+
+        
+        <section class="videos">
+            <h2>Videos Recomendados</h2>
+            <div class="videos-grid">
                 <div>
-                    <video controls>
-                        <source src="../videos/video1.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/Pls_q2aQzHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Introducción a la IA: Conceptos básicos y su impacto.</p>
                 </div>
                 <div>
-                    <video controls>
-                        <source src="../videos/video2.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/6OMTsOUZn-g?si=sPMI8-qSHzKcGBYn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Aprendizaje Automático: Fundamentos y ejemplos prácticos.</p>
                 </div>
                 <div>
-                    <video controls>
-                        <source src="../videos/video3.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/tWA5VNF_QQc?si=EhQHMNu-MG7KbLBO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Ética en la Inteligencia Artificial: Retos y perspectivas.</p>
                 </div>
             </div>
-            <div class="libros">
-                <div class="libro">
-                    <img src="../images/libro1.jpg" alt="Libro 1">
-                    <p>Descripción del libro 1...</p>
+        </section>
+
+        <section class="libros">
+            <h2>Libros Recomendados</h2>
+            <div class="libros-grid">
+                                <div class="libro">
+                    <p><strong>Artificial Intelligence: A Modern Approach</strong> - Este libro ofrece una introducción exhaustiva a los conceptos fundamentales de la inteligencia artificial.</p>
+                    <a href="https://www.amazon.com/Artificial-Intelligence-Modern-Approach-4th/dp/0134610997" target="_blank">
+                        <img src="../images/books/a-modern-approach.jpg" alt="Libro 1">
+                    </a>
                 </div>
                 <div class="libro">
-                    <img src="../images/libro2.jpg" alt="Libro 2">
-                    <p>Descripción del libro 2...</p>
+                    <p><strong>Deep Learning</strong> - Explora los conceptos de aprendizaje profundo con aplicaciones prácticas y ejemplos.</p>
+                    <a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618" target="_blank">
+                        <img src="../images/books/deep-learning.jpg" alt="Libro 2">
+                    </a>
+                </div>
+                <div class="libro">
+                    <p><strong>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</strong> - Una guía práctica para desarrollar proyectos de machine learning desde cero.</p>
+                    <a href="https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646" target="_blank">
+                        <img src="../images/books/hands-on-ml.jpg" alt="Libro 3">
+                    </a>
                 </div>
             </div>
         </section>
