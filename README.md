@@ -11,6 +11,7 @@
 
 - [ ] Check if it's needed add comments for better understanding
 - [ ] Check viability of a dropdown menu on header nav
+- [ ] Fix that the width of textarea (contacto form) does not overflow the container
 
 # DONE LOG: 
 
