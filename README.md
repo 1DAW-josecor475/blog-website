@@ -1,17 +1,13 @@
 # TO-DO:
 
 ## HIGH:
-- [ ] Make the contact form with 6 different data fields & oninput tag
+
 - [ ] Use 5 CSS pseudoclass
-- [ ] Make it responsive
+- [ ] Make it responsive (glosario)
 
 ## MID:
 
 ## LOW:
-
-- [ ] Check if it's needed add comments for better understanding
-- [ ] Check viability of a dropdown menu on header nav
-- [ ] Fix that the width of textarea (contacto form) does not overflow the container
 
 # DONE LOG: 
 
@@ -23,3 +19,6 @@
 - [x] Think about any other way to do the galley/news/applications, and if it's worth it
 - [x] Update website map
 - [x] Think if it's better make an unique css file for each html file
+- [x] Make the contact form with 6 different data fields & oninput tag
+- [x] Check viability of a dropdown menu on header nav
+- [x] Fix that the width of textarea (contacto form) does not overflow the container

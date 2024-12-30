@@ -66,3 +66,119 @@ nav {
 .nav-links a:hover {
     background-color: #eaeaea;
 }
+
+/* Estilo para el menú desplegable */
+.nav-links .dropdown {
+    position: relative;
+}
+
+/* Estilo para la flecha hacia abajo */
+.nav-links .arrow {
+    font-size: 0.9rem; /* Tamaño de la flecha */
+    margin-left: 3px;
+    transition: transform 0.3s ease; /* Transición suave para rotar la flecha */
+}
+
+.nav-links .dropdown-menu {
+    display: block; 
+    opacity: 0; /* Inicia oculto */
+    transform: translateY(-10px); /* Posición inicial ligeramente por encima */
+    position: absolute;
+    top: 100%; /* Ubica el menú debajo del elemento principal */
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+    pointer-events: none; /* Evita interacción cuando no está visible */
+}
+
+.nav-links .dropdown-menu li {
+    padding: 0;
+}
+
+.nav-links .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    white-space: nowrap; /* Evita que el texto se corte */
+    transition: background-color 0.3s ease;
+}
+
+.nav-links .dropdown-menu a:hover {
+    background-color: #eaeaea;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.nav-links .dropdown:hover .dropdown-menu {
+    opacity: 1; /* Aparece completamente */
+    transform: translateY(0); /* Desliza hacia abajo */
+    pointer-events: auto; /* Habilita la interacción */
+}
+
+/* Media Queries para Responsiveness */
+
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 1rem;
+        width: 100%; /* Asegura que los enlaces ocupen todo el ancho */
+    }
+
+    .logo img {
+        height: 25px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        padding: 15px;
+    }
+}

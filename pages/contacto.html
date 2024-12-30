@@ -17,14 +17,25 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="sobre-ia.html">Sobre IA</a></li>
                 <li><a href="aplicaciones.html">Aplicaciones</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
+                <li class="dropdown">
+                    <a href="noticias.html">Noticias <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="news/noticia1.html">La Inteligencia Artificial Revoluciona la Medicina</a></li>
+                        <li><a href="news/noticia2.html">IA Predice el Alzheimer Años Antes de los Síntomas</a></li>
+                        <li><a href="news/noticia3.html">Tratamientos Oncológicos Personalizados Gracias a la IA</a></li>
+                        <li><a href="news/noticia4.html">Cirugías Asistidas por Robots con Inteligencia Artificial</a></li>
+                        <li><a href="news/noticia5.html">IA Predice Brotes de Enfermedades Infecciosas con Mayor Precisión</a></li>
+                        <li><a href="news/noticia6.html">Chatbots con IA Brindan Apoyo Emocional a Pacientes</a></li>
+                        <li><a href="noticias.html">Ver todas las noticias</a></li>
+                    </ul>
+                </li>
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="recursos.html">Recursos</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="mapa-del-sitio.html">Mapa del Sitio</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
 
     <main class="contacto">
@@ -32,24 +43,40 @@
             <h1>Contáctanos</h1>
             <p>Si tienes preguntas, comentarios o sugerencias, no dudes en escribirnos. Estamos aquí para ayudarte.</p>
             <form action="#" method="post">
+                <!-- Nombre -->
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required oninput="console.log('Nombre:', this.value)">
                 </div>
 
+                <!-- Correo Electrónico -->
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="Tu dirección de correo" required>
+                    <input type="email" id="email" name="email" placeholder="Tu dirección de correo" required oninput="console.log('Correo Electrónico:', this.value)">
                 </div>
 
+                <!-- Número de Teléfono -->
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required oninput="console.log('Teléfono:', this.value)">
+                </div>
+
+                <!-- Asunto -->
                 <div class="form-group">
                     <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required oninput="console.log('Asunto:', this.value)">
                 </div>
 
+                <!-- Mensaje -->
                 <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje" rows="5" required></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje" rows="5" required oninput="console.log('Mensaje:', this.value)"></textarea>
+                </div>
+
+                <!-- Fecha -->
+                <div class="form-group">
+                    <label for="fecha">Fecha de Contacto</label>
+                    <input type="date" id="fecha" name="fecha" required oninput="console.log('Fecha de Contacto:', this.value)">
                 </div>
 
                 <button type="submit">Enviar Mensaje</button>

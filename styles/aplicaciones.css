@@ -64,3 +64,68 @@
     color: #555;
     margin: 0;
 }
+
+/* Media Queries para Responsiveness */
+
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+    .aplicaciones {
+        padding: 30px 15px;
+    }
+
+    .aplicaciones h1 {
+        font-size: 2rem;
+    }
+
+    .aplicaciones p {
+        font-size: 1rem;
+    }
+
+    .aplicaciones-grid {
+        gap: 15px;
+    }
+
+    .aplicaciones-grid article {
+        padding: 15px;
+    }
+
+    .aplicaciones-grid img {
+        height: 150px;
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    .aplicaciones {
+        padding: 20px 10px;
+    }
+
+    .aplicaciones h1 {
+        font-size: 1.8rem;
+    }
+
+    .aplicaciones p {
+        font-size: 0.9rem;
+    }
+
+    .aplicaciones-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 10px;
+    }
+
+    .aplicaciones-grid article {
+        padding: 10px;
+    }
+
+    .aplicaciones-grid img {
+        height: 120px;
+    }
+
+    .aplicaciones-grid h2 {
+        font-size: 1.2rem;
+    }
+
+    .aplicaciones-grid p {
+        font-size: 0.9rem;
+    }
+}

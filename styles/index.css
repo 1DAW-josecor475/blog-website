@@ -9,13 +9,19 @@
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #222;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    background: linear-gradient(to right, #3961ce, #2e3b55); /* Gradiente gris oscuro a azul oscuro */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+    -webkit-text-fill-color: transparent; /* Usa transparencia para hacer visible el gradiente */
+    background-clip: text; /* Fallback para navegadores compatibles sin prefijo */
+    color: transparent; /* Evita colores por defecto en navegadores no compatibles */
 }
 
 .hero p {
     font-size: 1.2rem;
     color: #555;
 }
+
 
 /* Artículos destacados */
 .destacados{
