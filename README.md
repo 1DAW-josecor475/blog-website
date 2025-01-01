@@ -7,7 +7,7 @@
 
 El sitio web incluye las siguientes secciones:
 
-1. **Inicio**: Página principal con un hero atractivo y artículos destacados.
+1. **Inicio**: Página principal con un hero atractivo y lugares destacados.
 2. **Sobre IA**: Información introductoria sobre qué es la IA y sus beneficios.
 3. **Aplicaciones**: Ejemplos y casos de uso reales de la IA en diferentes industrias.
 4. **Noticias**: Últimas actualizaciones y avances en el campo de la IA.
@@ -58,7 +58,7 @@ Mentes-Digitales/
 
 Accede a la siguiente dirección URL para visitar la web:
 
-[1daw-josecor475.github.io/blog-website/](https://1daw-josecor475.github.io/blog-website/)
+[1daw-josecor475.github.io/mentes-digitales/](https://1daw-josecor475.github.io/mentes-digitales/)
 
 ---
 
