@@ -52,3 +52,69 @@
     color: #333;
     margin: 0;
 }
+
+/* Media Queries para Responsiveness */
+
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+    .glosario {
+        padding: 30px 15px;
+    }
+
+    .glosario h1 {
+        font-size: 2rem;
+    }
+
+    .glosario p {
+        font-size: 1rem;
+    }
+
+    .terms {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduce el ancho mínimo */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .terms h2 {
+        font-size: 1rem;
+    }
+
+    .terms p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    .glosario {
+        padding: 20px 10px;
+    }
+
+    .glosario h1 {
+        font-size: 1.8rem;
+    }
+
+    .glosario p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .terms {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .terms article {
+        padding: 10px;
+    }
+
+    .terms h2 {
+        font-size: 1rem;
+        white-space: normal; /* Permite que el texto del título se divida si es necesario */
+    }
+
+    .terms p {
+        font-size: 0.9rem;
+    }
+}

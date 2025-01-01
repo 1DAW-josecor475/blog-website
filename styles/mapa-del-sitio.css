@@ -73,3 +73,66 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Media Queries para Responsiveness */
+
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 30px 15px;
+    }
+
+    .contenedor h1 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+        gap: 15px;
+    }
+
+    .seccion h2 {
+        font-size: 1.3rem;
+    }
+
+    .seccion ul li a {
+        font-size: 1.1rem;
+    }
+
+    .imagen img {
+        height: 250px; /* Reduce la altura de la imagen */
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 20px 10px;
+    }
+
+    .contenedor h1 {
+        font-size: 1.8rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 10px;
+    }
+
+    .seccion {
+        padding: 15px;
+    }
+
+    .seccion h2 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .seccion ul li a {
+        font-size: 1rem;
+    }
+
+    .imagen img {
+        height: 200px; /* Ajusta aún más la altura de la imagen */
+    }
+}
