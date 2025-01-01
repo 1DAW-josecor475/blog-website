@@ -56,7 +56,7 @@
 /* Media Queries para Responsiveness */
 
 /* Dispositivos medianos (tabletas) */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .glosario {
         padding: 30px 15px;
     }
@@ -76,7 +76,8 @@
     }
 
     .terms h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        white-space: normal;
     }
 
     .terms p {
