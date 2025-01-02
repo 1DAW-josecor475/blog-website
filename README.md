@@ -32,7 +32,8 @@ Mentes-Digitales/
 │   ├── recursos.html
 │   ├── galeria.html
 │   ├── contacto.html
-│   └── mapa-del-sitio.html
+│   ├── mapa-del-sitio.html
+│   └── /news
 ├── /styles
 │   ├── general.css
 │   ├── sobre-ia.css
@@ -44,8 +45,8 @@ Mentes-Digitales/
 │   ├── galeria.css
 │   ├── mapa-del-sitio.css
 │   └── contacto.css
-├── /images
-└── /news
+└── /images
+
 ```
 
 ## Características Principales 💥
