@@ -35,8 +35,13 @@ Mentes-Digitales/
 │   └── mapa-del-sitio.html
 ├── /styles
 │   ├── general.css
+│   ├── sobre-ia.css
 │   ├── aplicaciones.css
+│   ├── noticias.css
 │   ├── glosario.css
+│   ├── recursos.css
+│   ├── index.css
+│   ├── galeria.css
 │   ├── mapa-del-sitio.css
 │   └── contacto.css
 ├── /images
